@@ -22,3 +22,5 @@ Options:
 * `selected_gpio` - list of gpio that should be highlighted as selected
 * `disabled_pins` - list of pins that should not be clickable (also highlights)
 * `disabled_gpio` - list of gpio that should not be clickable (also highlights)
+
+![rpi_pinout_live](rpi_pinout_live.gif)

@@ -21,11 +21,16 @@ defmodule RpiPinoutLive.MixProject do
         docs: :docs,
         "hex.publish": :docs,
         "hex.build": :docs
-      }
+      },
+      aliases: [docs: ["docs", &copy_gif/1]]
     ]
   end
 
   def application, do: []
+
+  defp copy_gif(_) do
+    File.cp("rpi_pinout_live.gif", "doc/rpi_pinout_live.gif")
+  end
 
   defp deps do
     [
